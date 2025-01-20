@@ -1,0 +1,138 @@
+/* Fuente y estilo global */
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: #5D04D9;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.encabezado img {
+    vertical-align: middle;
+}
+
+.encabezado span {
+    font-size: 24px;
+}
+
+/* Contenedor */
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.productos, .agregar-producto {
+    width: 48%;
+}
+
+.productos h2, .agregar-producto h2 {
+    text-align: center;
+}
+
+/* Lista de productos */
+.lista-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.producto {
+    background-color: #5D04D9;
+    color: white;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.producto p {
+    margin: 5px 0;
+}
+
+.producto .precio {
+    font-size: 14px;
+}
+
+.producto .eliminar {
+    color: white;
+    cursor: pointer;
+    align-self: flex-end; 
+    margin-top: 5px; 
+    margin-left: 120px;
+}
+
+/* Formulario de agregar producto */
+.agregar-producto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor para los botones */
+.agregar-producto .botones-container {
+    display: flex;
+    flex-direction: row;  
+    gap: 20px;           
+    justify-content: center;
+}
+
+.agregar-producto input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #5F259F;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.agregar-producto button {
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Pie de página */
+.pie-de-pagina {
+    background-color: #5D04D9;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.pie-de-pagina p {
+    margin: 5px 0;
+    padding: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productos, .agregar-producto {
+        width: 100%;
+    }
+}
